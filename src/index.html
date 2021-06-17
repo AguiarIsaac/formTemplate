@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Formulário</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../public/styles.css">
+	</head>
+	<body>
+		<header>
+			<div id="link"><a href="https://github.com/AguiarIsaac">GitHub</a></div>
+		</header>
+
+		<section>
+			<h1>Formúlario</h1>
+			<h2>Cadastro de informações</h2>
+
+			<form>
+				<label for="name">Nome:</label><br>
+				<input type="text" id="name"><br>
+
+				<label for="email">Email:</label><br>
+				<input type="email" id="email"><br>
+
+				<label for="age">Idade:</label><br>
+				<input type="number" id="age"><br>
+
+				<p>Qual opção descreve melhor sua função atual?</p><br>
+				<select id="function">
+					<option disabled selected value>Selecione a função</option>
+					<option value="student">Estudante</option>
+					<option value="job">Trabalho em tempo integral</option>
+					<option value="learner">Professor</option>
+					<option value="preferNo">Prefiro não informar</option>
+					<option value="other">Outro</option>
+				</select><br>
+
+				<p>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</p><br>
+
+				<label>
+					<input type="checkbox" name="prefer" value="frontEnd"> Projetos Front-End
+				</label><br>
+				<label>
+					<input type="checkbox" name="prefer" value="backEnd"> Projetos Back-End
+				</label>
+
+			</form>
+		</section>
+	</body>
+</html>
