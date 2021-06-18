@@ -17,25 +17,27 @@
 
 			<form>
 				<label for="name">Nome:</label><br>
-				<input type="text" id="name"><br>
+				<input type="text" id="name" class="box1"><br>
 
 				<label for="email">Email:</label><br>
-				<input type="email" id="email"><br>
+				<input type="email" id="email" class="box1"><br>
 
 				<label for="age">Idade:</label><br>
-				<input type="number" id="age"><br>
+				<input type="number" id="age" class="box1"><br>
 
-				<p>Qual opção descreve melhor sua função atual?</p><br>
-				<select id="function">
-					<option disabled selected value>Selecione a função</option>
-					<option value="student">Estudante</option>
-					<option value="full time work">Trabalho em tempo integral</option>
-					<option value="learner">Professor</option>
-					<option value="preferNo">Prefiro não informar</option>
-					<option value="other">Outro</option>
-				</select><br>
+				<div>
+					<label>Qual opção descreve melhor sua função atual?</label><br>
+					<select id="function">
+						<option disabled selected value>Selecione a função</option>
+						<option value="student">Estudante</option>
+						<option value="full time work">Trabalho em tempo integral</option>
+						<option value="learner">Professor</option>
+						<option value="preferNo">Prefiro não informar</option>
+						<option value="other">Outro</option>
+					</select>
+				</div><br>
 
-				<p>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</p><br>
+				<label>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</label><br>
 
 				<label>
 					<input type="checkbox" name="prefer" value="frontEnd"> Projetos Front-End
