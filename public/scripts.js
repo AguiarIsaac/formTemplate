@@ -1,21 +1,20 @@
 let btn_submit = document.querySelector('input#btn_submit')
 let forms = {}
 let list_form = []
-
 btn_submit.addEventListener('click', save)
 
 function save () {
 	forms = {
+		id: id(), 
 		name: document.querySelector('input#name').value,
 		email: document.querySelector('input#email').value,
 		age: document.querySelector('input#age').value,
 		funcao: document.querySelector('select#function').value,
 		melhorias: checkbox(),
-		commits: document.querySelector('textarea#comentario').value
+		commits: document.querySelector('textarea').value
 	}
-
 	list_form.push(forms)
-	console.log(forms)
+	console.log(list_form)
 }
 
 function checkbox() {
@@ -27,4 +26,12 @@ function checkbox() {
 		}
 	}
 	return melhorias
+}
+
+function id() {
+	if(list_form.length == 0) {
+		return 0
+	} else {
+		return list_form.length
+	}
 }
