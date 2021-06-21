@@ -1,7 +1,7 @@
 let btn_submit = document.querySelector('input#btn_submit')
 let forms = {}
 let list_form = []
-btn_submit.addEventListener('click', save)
+btn_submit.addEventListener('click', save, result)
 
 function save () {
 	forms = {
@@ -34,4 +34,10 @@ function id() {
 	} else {
 		return list_form.length
 	}
+}
+
+function result() {
+	let result = document.querySelector('section#result')
+
+	result.innerHTML = `Informações fornecidas<br>Nome:${forms.name}`
 }
