@@ -48,6 +48,29 @@ form {
   text-align: initial;
 }
 
+select {
+	width: 90%;
+    height: 21px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+textarea {
+	width: 90%;
+    height: 81px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#btn_submit {
+	transition-duration: 0.4s;
+}
+
+#btn_submit:hover {
+	background-color: #4CAF50; /* Green */
+  	color: violet;
+}
+
 .box1 {
 	width: 90%;
     margin: 4px 0 4px 0px;
