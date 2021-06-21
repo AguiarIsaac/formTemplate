@@ -27,6 +27,9 @@ header  {
 
 a {
 	color: white;
+	font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 h1 {
@@ -37,7 +40,7 @@ h2 {
 	margin-bottom: 24px;
 }
 
-form {
+form, #result {
   background:rgba(118, 0, 140, 0.9);
   border-radius:10px;
   padding:16px;
@@ -62,19 +65,46 @@ textarea {
     margin-top: 10px;
 }
 
-#btn_submit {
-	transition-duration: 0.4s;
-}
-
-#btn_submit:hover {
-	background-color: #4CAF50; /* Green */
-  	color: violet;
-}
-
 .box1 {
 	width: 90%;
     margin: 4px 0 4px 0px;
     height: 21px;
     border-radius: 6px;
     color: black;
+    text-align: center;
+}
+
+#result {
+	margin-top: 24px;
+	color:white;
+}
+
+#end_form {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#end_form p {
+	text-decoration: underline;
+}
+
+#end_form textarea {
+	text-align: center;
+}
+
+#btn_submit {
+	width: 168px;
+    height: 27px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid #a87ad2;
+    transition-duration: 0.4s;
+    margin-top: 10px;
+}
+
+#btn_submit:hover {
+	background-color:violet;
+	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
