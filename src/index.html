@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<header>
-			<div id="link"><a href="https://github.com/AguiarIsaac">GitHub</a></div>
+			<div id="link"><a target="_blank" href="https://github.com/AguiarIsaac/formTemplate">GitHub</a></div>
 		</header>
 
 		<section>
@@ -38,7 +38,7 @@
 				</div><br>
 
 				<div>
-					<label>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</label><br>
+					<p>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</p><br>
 
 					<label>
 						<input type="checkbox" name="prefer" value="frontEnd"> Projetos Front-End
@@ -84,11 +84,16 @@
 					</label><br>
 				</div>
 
-				<P>Algum comentário ou sugestão?</P>
-				<textarea id="comentario" placeholder="insira seu comentário aqui"></textarea><br>
-
-				<input type="button" id="btn_submit" value="Enviar">
+				<div id="end_form">
+					<P>Algum comentário ou sugestão?</P>
+					<textarea id="comentario" placeholder="insira seu comentário aqui"></textarea><br>
+					<input type="button" id="btn_submit" value="Enviar">
+				</div>
 			</form>
+		</section>
+
+		<section id="result">
+
 		</section>
 
 		<script src="../public/scripts.js"></script>
