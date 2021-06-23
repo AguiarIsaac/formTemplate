@@ -9,7 +9,7 @@ let list_form = []
 
 btn_submit.addEventListener('click', save, result)
 btn_search.addEventListener('click', listagem)
-list_option.addEventListener('click', visualizacao)
+list_option.addEventListener('click', )
 
 function save () {
 	forms = {
@@ -52,10 +52,15 @@ function result() {
 
 function listagem() {
 	if(list_form == '') {
-  	window.alert('[ERROR] - nenhum cadastro na lista')
-  } else {
-  	for (form in list_form) {
-    	list_result.innerHTML += `<option id="${list_form[form].id}" class="listagem">${list_form[form].name}</option>`
+  		window.alert('[ERROR] - nenhum cadastro na lista')
+  }  else {
+  		for (form in list_form) {
+  			if (list_form.indexOf(Number(list_form[form].id)) != -1 ) {
+  		window.alert('[ERROR] - informações já listadas') 
+  			} else {
+  				list_result.innerHTML += `<option id="${list_form[form].id}" class="listagem">${list_form[form].name}</option>`
+  			}
+    	
     }
   }
 }

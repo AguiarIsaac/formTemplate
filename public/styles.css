@@ -108,3 +108,52 @@ textarea {
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+#result {
+      margin-bottom: 10%;
+    text-align: center;
+}
+
+#bloco {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 10px;
+    background-color: #00000052;
+    border-radius: 10px;
+    height: 250px;
+}
+
+#listagem {
+  width: 230px;
+  height: 230px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+
+#selecionado {
+    width: 230px;
+    height: 230px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+    background: white;
+    margin-right: 10px;
+    color:#5182dc;
+}
+
+#selecionado p {
+    text-align: initial;
+    margin-left: 6px;
+    line-height: 20px;
+}
+
+strong {
+  color:black;
+}
+
+.listagem {
+    margin: 2px;
+    border-radius: 4px
+}
