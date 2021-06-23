@@ -1,7 +1,15 @@
 let btn_submit = document.querySelector('input#btn_submit')
+let btn_search = document.querySelector('input#btn_search')
+let list_result = document.querySelector('select#listagem')
+let list_option = document.querySelector('option.listagem')
 let forms = {}
 let list_form = []
+
+
+
 btn_submit.addEventListener('click', save, result)
+btn_search.addEventListener('click', listagem)
+list_option.addEventListener('click', visualizacao)
 
 function save () {
 	forms = {
@@ -40,4 +48,18 @@ function result() {
 	let result = document.querySelector('section#result')
 
 	result.innerHTML = `Informações fornecidas<br>Nome:${forms.name}`
+}
+
+function listagem() {
+	if(list_form == '') {
+  	window.alert('[ERROR] - nenhum cadastro na lista')
+  } else {
+  	for (form in list_form) {
+    	list_result.innerHTML += `<option id="${list_form[form].id}" class="listagem">${list_form[form].name}</option>`
+    }
+  }
+}
+
+function visualizacao() {
+	window.alert(`${list_option.value}`)
 }
