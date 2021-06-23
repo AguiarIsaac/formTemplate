@@ -51,7 +51,7 @@ form, #result {
   text-align: initial;
 }
 
-select {
+#function {
 	width: 90%;
     height: 21px;
     border-radius: 6px;
@@ -92,7 +92,7 @@ textarea {
 	text-align: center;
 }
 
-#btn_submit {
+#btn_submit, #btn_search {
 	width: 168px;
     height: 27px;
     border-radius: 12px;
@@ -103,7 +103,7 @@ textarea {
     margin-top: 10px;
 }
 
-#btn_submit:hover {
+#btn_submit:hover, #btn_search:hover {
 	background-color:violet;
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
