@@ -9,20 +9,28 @@ let list_form = []
 
 btn_submit.addEventListener('click', save, result)
 btn_search.addEventListener('click', listagem)
-list_option.addEventListener('click', )
 
 function save () {
 	forms = {
 		id: id(), 
-		name: document.querySelector('input#name').value,
-		email: document.querySelector('input#email').value,
-		age: document.querySelector('input#age').value,
-		funcao: document.querySelector('select#function').value,
+		name: verificador(document.querySelector('input#name').value),
+		email: verificador(document.querySelector('input#email').value),
+		age: verificador(document.querySelector('input#age').value),
+		funcao: verificador(document.querySelector('select#function').value),
 		melhorias: checkbox(),
-		commits: document.querySelector('textarea').value
+		commits: verificador(document.querySelector('textarea').value)
 	}
 	list_form.push(forms)
 	console.log(list_form)
+}
+
+
+function verificador(campo) {
+	if(campo == ''){
+		window.alert('[ERROR] - Campo vazio, revise os dados')
+	} else {
+		return campo
+	}
 }
 
 function checkbox() {
@@ -58,13 +66,9 @@ function listagem() {
   			if (list_form.indexOf(Number(list_form[form].id)) != -1 ) {
   		window.alert('[ERROR] - informações já listadas') 
   			} else {
-  				list_result.innerHTML += `<option id="${list_form[form].id}" class="listagem">${list_form[form].name}</option>`
+  				 list_result.innerHTML += `<option id="${list_form[form].id}" class="listagem" onclick="onclick="teste(this)"">${list_form[form].name}</option>`
   			}
     	
     }
   }
-}
-
-function visualizacao() {
-	window.alert(`${list_option.value}`)
 }
